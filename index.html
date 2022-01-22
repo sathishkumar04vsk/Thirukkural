@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>திருக்குறள்</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm">
+        <h1 class="navbar-brand log">திருக்குறள்</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu1" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+        </button>
+        <div class="collapse navbar-collapse" id="menu1">
+            <ul class="navbar-nav ms-auto mb-sm-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#search">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  " href="#about">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <div class="container-sm">
+     <div id="home">
+         <h1 class="text-center">திருக்குறள் - திருவள்ளுவர்</h1>
+         <div class="row">
+            <div class="col-md-9">
+               <p> திருக்குறள் (Thirukkural)  உலகப்புகழ் பெற்ற தமிழ் இலக்கியமாகும். இதனை இயற்றியவர் திருவள்ளுவர் என்று அறியப்படுபவர். இதில் 1330 குறள்கள் பத்து பத்தாக 133 அதிகாரங்களின் கீழ் தொகுக்கப் பெற்றுள்ளன. திருக்குறள் சங்க இலக்கிய வகைப்பாட்டில் பதினெண்கீழ்க்கணக்கு எனப்படும் பதினெட்டு நூல்களின் திரட்டில் இருக்கிறது. இது அடிப்படையில் ஒரு வாழ்வியல் நூல். மாந்தர்கள் தம் அகவாழ்விலும் சுமுகமாக கூடி வாழவும், புற வாழ்விலும் இன்பமுடனும் இசைவுடனும் நலமுடனும் வாழவும் தேவையான அடிப்படைப் பண்புகளை விளக்குகிறது. இந்நூல் அறம், பொருள், இன்பம் அல்லது காமம் என்னும் முப்பெரும் பிரிவுகளாய் (முப்பால்) பிரித்தும் அழகுடன் இணைத்தும் கோர்த்தும் விளக்குகிறது.</p>
+               <p>வாழ்வியலின் எல்லா அங்கங்களையும் திருக்குறள் கூறுவதால், அதைச் சிறப்பித்துப் பல பெயர்களால் அழைப்பர்: திருக்குறள், முப்பால், உத்தரவேதம், தெய்வநூல், பொதுமறை, பொய்யாமொழி, வாயுறை வாழ்த்து, தமிழ் மறை, திருவள்ளுவம் என்ற பெயர்கள் அதற்குரியவை. கருத்துக்களை இன, மொழி, பாலின பேதங்களின்றி காலம் கடந்தும் பொருந்துவது போல் கூறி உள்ளதால் இந்நூல் "உலகப் பொது மறை" என்றும் அழைக்கப்படுகிறது</p>
+            </div>
+            <div class="col-md-3">
+                <img src="wp5489522.webp" >
+            </div>
+        </div>
+     </div>
+     <!-- Search -->
+        <section id="search">
+            
+            
+            <h1 class="text-center">Search</h1>
+            <input type="search" name="input" id="input" placeholder="Enter the Number">
+            <button  type="button" id="button" onclick="num()" name="input">Search</button>
+            <div class="container">
+                <!-- Tamil section -->
+                <section class="tamilsec">
+                <h1 class="text-center" id="tamil"></h1>
+                <h3 id="kural" class="text-center"></h3>
+                <div class="row">
+                    <div class="col-md-4" id="pal"></div>
+                    <div class="col-md-4" id="iyeal"></div>
+                    <div class="col-md-4" id="adhikaram"></div>
+                </div>
+                <h1 class="text-center" id="tamile1"></h1>
+               
+                <p id="porul"></p>
+            </section>
+            <!-- English Section -->
+             <section class="englishsec">
+                <h1 class="text-center" id="englisht"></h1>
+                <h3 id="english" class="text-center"></h3>
+                <div class="row">
+                    <div class="col-md-4" id="section"></div>
+                    <div class="col-md-4" id="chapter-gro"></div>
+                    <div class="col-md-4" id="chapter"></div>
+                </div>
+                <h1 class="text-center" id="eng"></h1>
+                <p id="explain"></p>
+            </section>
+            </div>
+        
+           </section>
+
+           <!-- About -->
+           <section id="about">
+               <h1 class="text-center">About</h1>
+               <P>திருக்குறள் - இதற்குப் பலர் உரை எழுதியுள்ளனர். அவற்றில் புகழ் வாய்ந்ததாக விளங்குவதும் அதிகமாகப் பயன்படுத்தப்பட்டதும் பரிமேலழகர் உரைதான். தற்காலத்திலும் பலர் உரை எழுதியுள்ளனர். அவற்றில் சிலவற்றை தமிழ் மற்றும் ஆங்கிலத்தில் இத்தளத்தின் வாயிலாக படித்து மகிழுங்கள்.</P>
+               <div class="row">
+                   <div class="col-md-6">
+                        <p>தமிழ் உரை எழுதியவர்கள்</p>
+                         <ul>
+                            <li>திரு பரிமேலழகர்</li>
+                            <li> திரு மு.வரதராசனார்</li>
+                            <li>திரு மணக்குடவர்</li>
+                            <li>திரு மு.கருணாநிதி</li>
+                            <li>திரு சாலமன் பாப்பையா</li>
+                            <li>திரு வீ.முனிசாமி</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                         <p>ஆங்கில உரை எழுதியவர்கள்</p>
+                         <ul>
+                             <li>Rev. Dr. G. U. Pope</li>
+                             <li>Rev W. H. Drew</li>
+                             <li>Rev. John Lazarus</li>
+                             <li>Mr F. W. Ellis</li>
+                         </ul>
+                    </div>
+            </div>
+           </section>
+
+        </div>
+        
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
